@@ -1,0 +1,388 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+	/*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+	width + padding + border = actual width of an element
+	height + padding + border = actual height of an element
+	e.g--> without border-box--> if height 10px and padding 5px and border 2px then total height will be 10+5+217px
+	but if use border-box then padding and border size will be include in height and at the last height will be remain 10px where padding a border and height adjust there value and make tha total valu 10px. (like height 5px padding 3px and border 2px = 5+3+2 = 10px)
+	*/
+}
+body{
+	background-color: #e2e2e2;
+}
+/*navbar section*/
+nav{
+	background-color: #1876f2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 5%;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+
+}
+.logo{
+	width: 150px;
+	margin-right: 45px;
+}
+.left-side, .right-side{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left-side ul li{
+	display: inline-block;
+	
+}
+.left-side ul li img{
+	 width: 28px;
+	 margin: 0 15px;
+}
+.profile-icon img{
+	width: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: 25px;
+
+}
+.search-box{
+	display: flex ;
+	align-items: center;
+	width: 350px;
+	background-color: #efefef;
+	border-radius: 15px;
+	padding: 0 15px;
+	outline: 3px solid gray;
+}
+.search-box img{
+	width: 18px;
+}
+.search-box input{
+	width: 100%;
+	background: transparent;
+	border: 0;
+	padding: 10px;
+
+
+}
+.online{
+	position: relative;
+}
+.online::after{
+	/*after selector use to add content after element conten*/
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: green;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	top: 0;
+	right: 0;
+}
+/*section b */
+.container{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 5%;
+}
+.left-bar{
+	position: sticky;
+	flex-basis: 25%;
+	/*set initial width of an item within a flexible box
+	*/
+	align-self: flex-start;
+	/*align a specific item from all the items into a flex container*/
+	top: 70px;
+
+	
+
+}
+.right-bar{
+	position: sticky;
+	flex-basis: 25%;
+	align-self: flex-start;
+	top: 70px;
+	background-color: white;
+	color: #626262;
+	padding: 20px;
+	
+}
+.middle-bar{
+	flex-basis: 47%;
+}
+.imp-links a, .shortcart a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	width: fit-content;
+	color: #626262;
+	margin-bottom: 30px;
+}
+.imp-links a img{
+	width: 25px;
+	margin-right: 15px;
+}
+.imp-links a:last-child{
+	color: #1876f2;
+}
+.imp-links{
+	border-bottom: 1px solid gray;
+}
+.shortcart a img{
+	width: 40px;
+	margin-right: 15px;
+	border-radius: 5px;
+}
+.shortcart p{
+	margin: 20px 0;
+	color: #626262;
+	font-weight: 600;
+}
+/* right side bar */
+.sidebar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+
+}
+.sidebar h4{
+	font-weight: 600;
+	font-size: 16px;
+}
+.sidebar a{
+	text-decoration: none;
+	font-size: 13px;
+	color: #1876f2;
+}
+.event{
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.left-event{
+	border-radius: 10px;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	box-shadow: 0 0 10px  rgb(0, 0, 0, 0.1);
+	/*box-shadow: h-offset v-offset blur spread color*/
+	margin-right: 15px;
+	padding-top: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.right-event p, .right-event a{
+	font-size: 12px;
+}
+.right-event a{
+	text-decoration: none;
+	color: #1872f2;
+}
+.left-event span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: white;
+	background-color: #1872f2;
+	font-size: 12px;
+	padding: 4px 0;
+}
+#adv-img{
+	width: 100%;
+	margin-bottom: 15px;
+}
+.online-friends{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.online-friends .online img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.online-friends .online{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 14px;
+
+}
+.online-friends .online::after{
+	top: 30px;
+}
+
+/* middle-bar*/
+.stories{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+
+}
+.story{
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	flex-basis: 18%;
+	padding-top: 32%;
+}
+.story img{
+	position: absolute;
+	width: 45px;
+	bottom: 30px;
+	left: 35px;
+	border-radius: 50%;
+	border: 5px solid #1872f2;
+}
+.story p{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+#story1 img{
+	/* translateX(-50%) translateY(-50%) , which means: move me leftwards by 50% of my width, along the x-axis, and. move me upwards by 50% of my height, along the y-axis.
+	transform: translateY(-50%) ;
+	*/
+	
+}
+#story1{
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('../images/status-1.png');
+}
+#story2{
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('../images/status-2.png');
+}
+#story3{
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('../images/status-3.png');
+}
+#story4{
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('../images/status-4.png');
+}
+#story5{
+	background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url('../images/status-5.png');
+}
+.write-post-container{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	width: 100%;
+	color: #626262;
+}
+.user-profile{
+	display: flex;
+	align-items: center;
+}
+.user-profile img{
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+.user-profile p{
+	font-weight: 600;
+	color: #626262;
+	margin-bottom: -5px;
+	
+}
+.user-profile small{
+	font-size: 12px;
+}
+
+
+
+.post-input-container{
+	padding-top: 20px;
+	padding-left: 70px;
+}
+.post-input-container textarea{
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	resize: none;
+}
+.add-post-links {
+	display: flex;
+	margin-top: 10px;
+}
+.add-post-links a{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-decoration: none;
+	color: #1872f2;
+	margin-right: 20px;
+	font-size: 15px;
+}
+.add-post-links a img{
+	width: 20px;
+	margin-right: 12px;
+}
+b a{
+	text-decoration: none;
+}
+.feeds-container{
+	width: 100%;
+	background-color: #fff;
+	color: #626262;
+	border-radius: 6px;
+	padding: 20px;
+	margin:20px 0;
+}
+.post-date{
+	width: 12px;
+	color: #9e9e9e;
+}
+.feeds-container>img{
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 4px;
+	
+	
+}
+.feeds-container .user-profile{
+	position: relative;
+}
+.feeds-container .more{
+	position: absolute;
+	right: 0;
+
+}
+.feeds-container .more a{
+	color: #9e9e9e;
+}
+.feeds-container p{
+	margin-top: 10px;
+}
+.activity-icons{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.activity-left-icons div{
+	display: inline-flex;
+	align-items: center;
+	margin-right: 30px;
+}
+.activity-left-icons  img{
+	width: 20px;
+	margin-right:10px;
+}
+#load-btn{
+	display: block;
+	margin: auto;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #9e9e9e;
+	color: #626262;
+	background-color: transparent;
+}
+/*footer*/
