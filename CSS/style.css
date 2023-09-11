@@ -84,6 +84,59 @@ nav{
 	top: 0;
 	right: 0;
 }
+.setting-menu{
+	position: absolute;
+	width: 90%;
+	max-width: 350px;
+	height: 400px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 4px;
+	top: 108%;
+	right: 5%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.setting-menu-box{
+	padding: 20px 20px;
+}
+.setting-menu-box hr{
+	border: 0;
+	height: 1px;
+	background: #9a9a9a;
+	margin: 10px 0;
+}
+.user-profile a{
+	text-decoration: none;
+	color: #5093f4;
+	font-size: 13px;
+}
+.setting-icon{
+	display: flex;
+	align-items: center;
+	margin: 10px 0;
+	
+}
+.setting-icon>img{
+	width: 38px;
+	margin-right: 10px;
+	border-radius: 50%;
+	
+}
+
+.setting-icon>a{
+	text-decoration: none;
+	color: #626262;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex: 1;
+	
+}
+.setting-icon a img{
+	width: 11px;
+	
+}
 /*section b */
 .container{
 	display: flex;
@@ -386,3 +439,7 @@ b a{
 	background-color: transparent;
 }
 /*footer*/
+center{
+	color: #626262;
+	padding: 15px 0 30px;
+}
