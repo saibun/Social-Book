@@ -88,14 +88,74 @@ nav{
 	position: absolute;
 	width: 90%;
 	max-width: 350px;
-	height: 400px;
+	height: 370px;
 	background: #fff;
 	overflow: hidden;
 	border-radius: 4px;
 	top: 108%;
 	right: 5%;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	/*visibility: hidden;
+	we can also hide it by set the height 0 and onclick set the original height
+	*/ 
+	transition: height 0.3s;
 }
+/*
+.show-option{
+	visibility: visible;
+	height: 370px;
+}
+*/
+.toggle-opt{
+	margin-left: 30px;
+}
+.switch{
+	display: inline-block;
+	position: relative;
+	width: 60px;
+	height: 40px;
+
+}
+.switch input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ccc;
+	cursor: pointer;
+	border-radius: 20px;
+	transition: background-color 1s ;
+}
+.slider:before{
+	position: absolute;
+	content: '';
+	width: 25px;
+    height: 25px;
+    background-color: white;
+    top: 7.5px;
+    left: 5px;
+    border-radius: 50%;
+    transition: transform 0.5s;
+
+
+}
+.check_box:checked + .slider{
+	background-color: black ;
+
+}
+.check_box:checked + .slider:before{
+	transform: translateX(20px);
+	transition: transform 0.5s;
+
+}
+
+
 .setting-menu-box{
 	padding: 20px 20px;
 }

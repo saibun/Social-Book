@@ -33,10 +33,10 @@
 				<input type="text" name="" placeholder="search  ">
 			</div>
 			<div class="profile-icon online">
-				<img src="./images/profile-pic.png">
+				<img src="./images/profile-pic.png" onclick="optionShow()">
 			</div>
 			<!-- settings popup menu -->
-			<div class="setting-menu">
+			<div class="setting-menu" id='nav-profile-img'>
 				<div class="setting-menu-box">
 					<div class="user-profile">
 						<img src="images/profile-pic.png" alt="profile-pic">
@@ -44,6 +44,13 @@
 							<p>Saikat Chatterjee</p>
 							<a href="">Account settings</a>
 						</div>
+						<div class="toggle-opt">
+							<label class="switch">
+								<input type="checkbox" name="" class="check_box">
+								<span class="slider round"></span>
+							</label>
+						</div>
+						
 						
 						
 					</div>
@@ -487,6 +494,7 @@
 			copyright saikat chatterjee
 		</center>
 	</footer>
+	<script type="text/javascript" src="./JS/index.js"></script>
 	
 	
 
